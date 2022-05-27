@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #efed40;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-size: 90px;
+}
