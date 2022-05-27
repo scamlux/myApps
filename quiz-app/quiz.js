@@ -152,6 +152,7 @@ function pointResults() {
     pointBtn.disabled = false;
     pointBtn.addEventListener("click", () => {
       renderQuiz(quizzes[idx]);
+      quiz_round.innerText = `${idx + 1}-round`;
       // if (pointBtn.classList.includes("point--success")) {
       //   selectedIdx.style.backgroundColor = "#47f547";
       // } else if (pointBtn.classList.includes("point--fail")) {
