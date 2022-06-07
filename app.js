@@ -14,7 +14,6 @@ async function fetchHandler() {
 
 button.addEventListener("click", () => {
   let isLoaded = image.complete;
-
   if (isLoaded) {
     fetchHandler();
   }
