@@ -7,17 +7,19 @@ btn.addEventListener("click", () => {
   if (!timer) {
     alert("Son kiriting");
   }
-  const bounce = document.createElement("p");
-  bounce.innerText = timer;
-  boilingBox.appendChild(bounce);
-  setInterval(() => {
-    bounce.innerText--;
-    if (bounce.innerText == 0) {
-      bounce.style.display = "none";
-    }
-    if (bounce.innerText == 5) {
-      bounce.style.backgroundColor = "red";
-    }
-  }, 1000);
+  if (timer == parseInt(timer)) {
+    const bounce = document.createElement("p");
+    bounce.innerText = timer;
+    boilingBox.appendChild(bounce);
+    setInterval(() => {
+      bounce.innerText--;
+      if (bounce.innerText == 0) {
+        bounce.style.display = "none";
+      }
+      if (bounce.innerText == 5) {
+        bounce.style.backgroundColor = "red";
+      }
+    }, 1000);
+  }
   timer = "";
 });
