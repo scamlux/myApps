@@ -15,6 +15,9 @@ btn.addEventListener("click", () => {
     if (bounce.innerText == 0) {
       bounce.style.display = "none";
     }
+    if (bounce.innerText == 5) {
+      bounce.style.backgroundColor = "red";
+    }
   }, 1000);
   timer = "";
 });
