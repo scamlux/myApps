@@ -23,7 +23,7 @@ class Tree extends Component {
               
             }}
           >
-            {explorer.items.map((explore) => (
+            {explorer?.items.map((explore) => (
               <Tree explorer={explore} />
             ))}
           </div>
